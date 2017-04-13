@@ -1,24 +1,41 @@
 html {
-  background-color: grey;
+  background-color: #c43e00;
 }
 #grillList {
   margin-top: 20px;
 }
 .hero-body {
-  background-image: url('http://i.imgur.com/0lVwUmu.png');
-  background-position: center;
-  background-size: cover;
+  background-image: url('http://i.imgur.com/jMxejb0.jpg');
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .title {
-  font-family: 'Walter Turncoat', cursive;
-  font-size: 6vw;
-  color: red;
+  font-family: 'Acme', sans-serif;
+  font-size: 8vw;
+  color: black;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 .subtitle {
-  font-family: 'Walter Turncoat', cursive;
+  font-family: 'Acme', sans-serif;
   font-weight: bold;
   font-size: 2vw;
-  color: red;
+  color: black;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.nav {
+  margin-top: 10px;
+  background-color: #ff6f00;
+}
+#logo {
+  font-size: 4vh;
+  font-weight: bold;
+}
+.nav a {
+  color: black;
+  font-family: 'Acme', sans-serif;
+
+}
+.nav a:hover {
+  color: white;
 }
