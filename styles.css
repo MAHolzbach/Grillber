@@ -1,9 +1,6 @@
 html, body{
   background-color: #c43e00;
 }
-#grillList {
-  margin-top: 20px;
-}
 .hero-body.landing{
   background-image: url('http://i.imgur.com/jMxejb0.jpg');
   background-position: right;
@@ -66,7 +63,7 @@ html, body{
   font-size: 3vh;
   padding: 10px;
 }
-.howTitle {
+.howTitle, .grillTitle {
   font-family: 'Acme', sans-serif;
   color: black;
   text-shadow: -1px 0 #c43e00, 0 1px #c43e00, 1px 0 #c43e00, 0 -1px #c43e00;
@@ -74,7 +71,6 @@ html, body{
 }
 .howItWorks {
   margin-top: 20px;
-  background-color: #ff6f00;
   background: #f1f1f1;
 }
 .howItWorks h3 {
@@ -83,12 +79,16 @@ html, body{
   text-shadow: -1px 0 #c43e00, 0 1px #c43e00, 1px 0 #c43e00, 0 -1px #c43e00;
   font-size: 4vh;
 }
-#columns {
+.grillList {
+  border: red 5px solid;
+  margin-top: 20px;
+  background-color: #ff6f00;
 }
-.steps {
+.grillTitle {
+  border: blue 5px solid;
 }
-.steps figure {
-
+.grillList .descColumn {
+  border: green 5px solid;
 }
 .grill {
   -webkit-transition: -webkit-transform 300ms, box-shadow 300ms, opacity 300ms;
