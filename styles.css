@@ -62,11 +62,35 @@ html, body{
 .hero.aboutUs .container li {
   font-family: 'Acme', sans-serif;
   color: black;
+  text-shadow: -1px 0 #c43e00, 0 1px #c43e00, 1px 0 #c43e00, 0 -1px #c43e00;
   font-size: 3vh;
   padding: 10px;
 }
+.howTitle {
+  font-family: 'Acme', sans-serif;
+  color: black;
+  text-shadow: -1px 0 #c43e00, 0 1px #c43e00, 1px 0 #c43e00, 0 -1px #c43e00;
+  font-size: 7vh;
+}
+.howItWorks {
+  margin-top: 20px;
+  background-color: #ff6f00;
+  background: #f1f1f1;
+}
+.howItWorks h3 {
+  font-family: 'Acme', sans-serif;
+  color: black;
+  text-shadow: -1px 0 #c43e00, 0 1px #c43e00, 1px 0 #c43e00, 0 -1px #c43e00;
+  font-size: 4vh;
+}
+#columns {
+}
+.steps {
+}
+.steps figure {
+
+}
 .grill {
-  /*border: 2px #feda6a solid;*/
   -webkit-transition: -webkit-transform 300ms, box-shadow 300ms, opacity 300ms;
   -moz-transition: -webkit-transform 300ms, box-shadow 300ms, opacity 300ms;
   -ms-transition: -webkit-transform 300ms, box-shadow 300ms, opacity 300ms;
