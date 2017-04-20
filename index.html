@@ -12,25 +12,24 @@
   <body>
     <!-- START NAV -->
     <nav class="nav">
-      <div class="container">
-        <div class="nav-left">
-          <a class="nav-item" id="logo">Grillber</a>
-          <a class="nav-item is-hidden-mobile">Grills</a>
-          <a class="nav-item is-hidden-mobile">Extras</a>
-          <a class="nav-item is-hidden-mobile">Pricing</a>
-          <a class="nav-item is-hidden-mobile">About</a>
-        </div>
-        <span class="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-        <div class="nav-right nav-menu">
-          <a class="nav-item is-tab is-hidden-tablet">Grills</a>
-          <a class="nav-item is-tab is-hidden-tablet">Extras</a>
-          <a class="nav-item is-tab is-hidden-tablet">Pricing</a>
-          <a class="nav-item is-tab is-hidden-tablet">About</a>
-        </div>
+      <div class="nav-left">
+        <a class="nav-item" id="logo">Grillber</a>
+        <a class="nav-item is-hidden-touch">Grills</a>
+        <a class="nav-item is-hidden-touch">Extras</a>
+        <a class="nav-item is-hidden-touch">Pricing</a>
+        <a class="nav-item is-hidden-touch">About</a>
+        <a class="nav-item is-hidden-mobile" id='joinLink'>Join Grillber</a>
+      </div>
+      <span class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <div class="nav-right nav-menu">
+        <a class="nav-item is-tab is-hidden-desktop">Grills</a>
+        <a class="nav-item is-tab is-hidden-desktop">Extras</a>
+        <a class="nav-item is-tab is-hidden-desktop">Pricing</a>
+        <a class="nav-item is-tab is-hidden-desktop">About</a>
       </div>
     </nav>
     <!-- END NAV -->
@@ -136,41 +135,110 @@
     <!-- END HOW IT WORKS SECTION -->
 
     <!-- START GRILL SECTION -->
-    <div class='container grillList'>
-      <div class='columns'>
-        <div class='column is-12 has-text-centered'>
-          <h1 class='grillTitle'>
-            Meet the grills
-          </h1>
+    <section class='hero grillList'>
+      <div class='hero-body'>
+        <div class='container'>
           <div class='columns'>
-            <div class='column is-6 picColumn'>
-              <figure class='image'>
-                <img src="http://i.imgur.com/Ga5v4Pe.jpg" alt="">
-              </figure>
-            </div>
-            <div class='column is-6 has-text-left descColumn'>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+            <div class='column is-12 has-text-centered'>
+              <h1 class='grillTitle'>
+                Meet the grills
+              </h1>
+              <div class='columns'>
+                <div class='column is-6 picColumn'>
+                  <figure class='image'>
+                    <img src="http://i.imgur.com/Ga5v4Pe.jpg" alt="">
+                  </figure>
+                </div>
+                <div class='column is-6 has-text-left descColumn'>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+              <div class='columns'>
+                <div class='column is-6 picColumn'>
+                  <figure class='image'>
+                    <img src="http://i.imgur.com/6p4v0vQ.jpg" alt="">
+                  </figure>
+                </div>
+                <div class='column is-6 has-text-left descColumn'>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
+              <div class='columns'>
+                <div class='column is-6 picColumn'>
+                  <figure class='image'>
+                    <img src="http://i.imgur.com/1jiyFYH.jpg" alt="">
+                  </figure>
+                </div>
+                <div class='column is-6 has-text-left descColumn'>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <form action="/charge" method="POST">
-        <script
-          src="https://checkout.stripe.com/checkout.js"
-          class="stripe-button"
-          data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
-          data-image="/square-image.png"
-          data-name="Demo Site"
-          data-description="2 widgets ($20.00)"
-          data-amount="2000">
-        </script>
-      </form>
-    </div>
-
+    </section>
     <!-- END GRILL SECTION -->
 
+    <section class='hero'>
+      <div class='hero-body'>
+        <div class='container'>
+          <div class='columns'>
+            <div class='column is-6 is-offset-3'>
+              <div id='booker'>
+                Book now!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <form action="/charge" method="POST">
+      <script
+        src="https://checkout.stripe.com/checkout.js"
+        class="stripe-button"
+        data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+        data-image="/square-image.png"
+        data-name="Demo Site"
+        data-description="2 widgets ($20.00)"
+        data-amount="2000">
+      </script>
+    </form> -->
+
+    <!-- START FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Grillber</strong> by <a href="https://maholzbach.github.io/">Mike Holzbach</a>.
+          </p>
+          <p>
+            <a class="icon is-large" href="https://github.com/MAHolzbach">
+              <i class="fa fa-github"></i>
+            </a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous">
+    </script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous">
+    </script>
     <script src="https://use.fontawesome.com/80d4978ea7.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script type="text/javascript" src="scripts.js"></script>

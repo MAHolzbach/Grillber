@@ -36,6 +36,9 @@ html, body{
 .nav a:hover {
   color: white;
 }
+#joinLink {
+  margin-right: -320px;
+}
 .hero.aboutUs {
   margin-top: 20px;
   background-color: #ff6f00;
@@ -80,34 +83,28 @@ html, body{
   font-size: 4vh;
 }
 .grillList {
-  border: red 5px solid;
   margin-top: 20px;
   background-color: #ff6f00;
 }
-.grillTitle {
-  border: blue 5px solid;
-}
 .grillList .descColumn {
-  border: green 5px solid;
 }
-.grill {
-  -webkit-transition: -webkit-transform 300ms, box-shadow 300ms, opacity 300ms;
-  -moz-transition: -webkit-transform 300ms, box-shadow 300ms, opacity 300ms;
-  -ms-transition: -webkit-transform 300ms, box-shadow 300ms, opacity 300ms;
-  -o-transition: -webkit-transform 300ms, box-shadow 300ms, opacity 300ms;
-  transition: -webkit-transform 300ms, box-shadow 300ms, opacity 300ms;
-  box-shadow: 0px 0px 0px 0px;
-  -webkit-box-shadow: 0px 0px 0px 0px;
-  transform: translate3d(0,0,0);
-  -webkit-transform: translate3d(0,0,0);
+.grillList img {
+  border: black 1px solid;
 }
-.grill:hover {
-  position: relative;
-  -webkit-transform: translateY(-6px);
-  -moz-transform: translateY(-6px);
-  transform: translateY(-6px);
-  box-shadow: 0 20px 20px #feda6a;
-  -moz-box-shadow: 0 20px 20px #feda6a;
-  -webkit-box-shadow: 0 20px 20px #feda6a;
-  text-decoration: none;
+#booker > div {
+  border: red 5px solid;
+  background: #f1f1f1;
+  padding: 10px;
+}
+#booker td {
+  border: 1px black solid;
+  text-align: center;
+  padding: 1px;
+}
+.footer a {
+  color: #ff6f00;
+}
+.footer a:hover {
+  color: white;
+  text-shadow: -1px 0 #ff6f00, 0 1px #ff6f00, 1px 0 #ff6f00, 0 -1px #ff6f00;
 }
