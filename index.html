@@ -10,6 +10,13 @@
     <title></title>
   </head>
   <body>
+
+    <!-- TODO: Add scroll functionality to navbar. -->
+    <!-- TODO: Add modal sign-up form. -->
+    <!-- TODO: Add proper grill text. -->
+    <!-- TODO: Add 'extras' section. -->
+    <!-- TODO: Add time selection to details form. -->
+
     <!-- START NAV -->
     <nav class="nav">
       <a class="nav-item" id="logo">Grillber</a>
@@ -192,7 +199,7 @@
             <div class='column is-4 is-offset-2'>
               <div id='booker'>
                 <p>
-                  Check availability!
+                  Click a date to check availability
                 </p>
               </div>
             </div>
@@ -267,14 +274,15 @@
                     </span>
                     <input class="input" type="text" placeholder="Total" id='finalTotal'>
                   </p>
-                  <p class="control">
-                    <a class="button is-success">
-                      <span class="icon is-small">
-                        <i class="fa fa-check"></i>
-                      </span>
-                      <span>Book!</span>
-                    </a>
-                  </p>
+                  <form action="/charge" method="POST" id='bookingButton'>
+                    <script
+                      src="https://checkout.stripe.com/checkout.js"
+                      class="stripe-button"
+                      data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+                      data-image="/square-image.png"
+                      data-name="Grillber">
+                    </script>
+                  </form>
                 </div>
               </div>
             </div>
@@ -283,18 +291,6 @@
       </div>
     </section>
     <!-- END AVAILABILITY SECTION -->
-
-    <!-- <form action="/charge" method="POST">
-      <script
-        src="https://checkout.stripe.com/checkout.js"
-        class="stripe-button"
-        data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
-        data-image="/square-image.png"
-        data-name="Demo Site"
-        data-description="2 widgets ($20.00)"
-        data-amount="2000">
-      </script>
-    </form> -->
 
     <!-- START FOOTER -->
     <footer class="footer">
