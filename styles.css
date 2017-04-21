@@ -36,9 +36,6 @@ html, body{
 .nav a:hover {
   color: white;
 }
-#joinLink {
-  margin-right: -320px;
-}
 .hero.aboutUs {
   margin-top: 20px;
   background-color: #ff6f00;
@@ -91,15 +88,74 @@ html, body{
 .grillList img {
   border: black 1px solid;
 }
+#booker p {
+  font-family: 'Acme', sans-serif;
+  color: #c43e00;
+  text-align: center;
+  font-size: 3vh;
+}
 #booker > div {
-  border: red 5px solid;
+  font-family: 'Acme', sans-serif;
   background: #f1f1f1;
   padding: 10px;
+  border: 2px black solid;
+}
+#booker > div > div {
+  font-family: 'Acme', sans-serif;
+  font-size: 3.5vh;
+}
+#booker > div > div > a.ui-datepicker-next.ui-corner-all > span {
+  color: #ff6f00;
+  float: right;
+}
+#booker > div > div > a.ui-datepicker-next.ui-corner-all > span:hover {
+  color: black;
+}
+#booker > div > div > a.ui-datepicker-prev.ui-corner-all > span {
+  color: #ff6f00;
+}
+#booker > div > div > a.ui-datepicker-prev.ui-corner-all > span:hover {
+  color: black;
+}
+#booker > div > div > div {
+  text-align: center;
+}
+#booker th {
+  text-align: center;
 }
 #booker td {
   border: 1px black solid;
   text-align: center;
   padding: 1px;
+}
+#booker td a {
+  color: #ff6f00;
+  font-size: 2.5vh;
+}
+#booker td a:hover {
+  color: black;
+}
+#selector {
+  background: #f1f1f1;
+  /*display: none;*/
+  border: 2px black solid;
+  padding: 10px;
+  font-family: 'Acme', sans-serif;
+}
+#selector label {
+  font-size: 2.5vh;
+}
+.selectorp {
+  font-family: 'Acme', sans-serif;
+  color: #c43e00;
+  text-align: center;
+  font-size: 3vh;
+}
+.chairCount {
+  display: none;
+}
+#runningTotal input {
+  margin-left: 5px;
 }
 .footer a {
   color: #ff6f00;

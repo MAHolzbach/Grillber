@@ -12,24 +12,22 @@
   <body>
     <!-- START NAV -->
     <nav class="nav">
-      <div class="nav-left">
-        <a class="nav-item" id="logo">Grillber</a>
-        <a class="nav-item is-hidden-touch">Grills</a>
-        <a class="nav-item is-hidden-touch">Extras</a>
-        <a class="nav-item is-hidden-touch">Pricing</a>
-        <a class="nav-item is-hidden-touch">About</a>
-        <a class="nav-item is-hidden-mobile" id='joinLink'>Join Grillber</a>
-      </div>
+      <a class="nav-item" id="logo">Grillber</a>
+      <a class="nav-item is-hidden-touch">About</a>
+      <a class="nav-item is-hidden-touch">How it works</a>
+      <a class="nav-item is-hidden-touch">Grills</a>
+      <a class="nav-item is-hidden-touch">Book</a>
+      <a class="nav-item is-hidden-mobile" id='joinLink'>Join Grillber</a>
       <span class="nav-toggle">
         <span></span>
         <span></span>
         <span></span>
       </span>
       <div class="nav-right nav-menu">
-        <a class="nav-item is-tab is-hidden-desktop">Grills</a>
-        <a class="nav-item is-tab is-hidden-desktop">Extras</a>
-        <a class="nav-item is-tab is-hidden-desktop">Pricing</a>
         <a class="nav-item is-tab is-hidden-desktop">About</a>
+        <a class="nav-item is-tab is-hidden-desktop">How it Works</a>
+        <a class="nav-item is-tab is-hidden-desktop">Grills</a>
+        <a class="nav-item is-tab is-hidden-desktop">Book</a>
       </div>
     </nav>
     <!-- END NAV -->
@@ -186,19 +184,105 @@
     </section>
     <!-- END GRILL SECTION -->
 
+    <!-- START AVAILABILITY SECTION -->
     <section class='hero'>
       <div class='hero-body'>
         <div class='container'>
           <div class='columns'>
-            <div class='column is-6 is-offset-3'>
+            <div class='column is-4 is-offset-2'>
               <div id='booker'>
-                Book now!
+                <p>
+                  Check availability!
+                </p>
+              </div>
+            </div>
+            <div class='column is-4'>
+              <p class='selectorp'>
+                Details!
+              </p>
+              <div id='selector'>
+                <div class='field'>
+                  <label class='label'>Which grill would you like?</label>
+                  <p class='control'>
+                    <span class='select'>
+                    <select class='grillType'>
+                      <option value='small'>Small</option>
+                      <option value='medium'>Medium</option>
+                      <option value='beast'>The Beast</option>
+                    </select>
+                  </span>
+                  </p>
+                </div>
+                <div class='field'>
+                  <label class='label'>How many hours will you need it?</label>
+                  <p class='control'>
+                    <span class='select'>
+                    <select class='hourNumber'>
+                      <option value='1'>1</option>
+                      <option value='2'>2</option>
+                      <option value='3'>3</option>
+                      <option value='4'>4</option>
+                      <option value='5'>5</option>
+                      <option value='6'>6</option>
+                      <option value='7'>7</option>
+                      <option value='8'>8</option>
+                    </select>
+                  </span>
+                  </p>
+                </div>
+                <div class="field">
+                  <label class='label'>Any extras?</label>
+                  <p class="control">
+                    <label class="checkbox">
+                      <input type="checkbox" class='sodBox'>
+                      Sod
+                    </label>
+                    <label class="checkbox">
+                      <input type="checkbox" class='chairs' id='chairs'>
+                      Lawn chairs
+                    </label>
+                    <p class='control chairCount'>
+                      <label class='label chairCount'>How many?</label>
+                      <span class='select'>
+                      <select class='chairCount chairOrder'>
+                        <option value='0'>0</option>
+                        <option value='1'>1</option>
+                        <option value='2'>2</option>
+                        <option value='3'>3</option>
+                        <option value='4'>4</option>
+                        <option value='5'>5</option>
+                        <option value='6'>6</option>
+                        <option value='7'>7</option>
+                        <option value='8'>8</option>
+                      </select>
+                    </span>
+                    </p>
+                  </p>
+                </div>
+                <div class="field has-addons" id='runningTotal'>
+                  <label class='label'>Total</label>
+                  <p class="control has-icon">
+                    <span class="icon is-small is-left">
+                      <i class="fa fa-dollar"></i>
+                    </span>
+                    <input class="input" type="text" placeholder="Total" id='finalTotal'>
+                  </p>
+                  <p class="control">
+                    <a class="button is-success">
+                      <span class="icon is-small">
+                        <i class="fa fa-check"></i>
+                      </span>
+                      <span>Book!</span>
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- END AVAILABILITY SECTION -->
 
     <!-- <form action="/charge" method="POST">
       <script
