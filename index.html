@@ -6,25 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
     <link rel="stylesheet" href="styles.css">
     <title></title>
   </head>
   <body>
 
-    <!-- TODO: Add scroll functionality to navbar. -->
     <!-- TODO: Add modal sign-up form. -->
-    <!-- TODO: Add proper grill text. -->
-    <!-- TODO: Add 'extras' section. -->
-    <!-- TODO: Add time selection to details form. -->
-    <!-- TODO: Social media integration. -->
+    <!-- IDEA: Add randomly chosen pic from social media sites? -->
+    <!-- TODO: Display clicked date in details form. -->
+    <!-- BUG: Drop down chevrons on booker visible in timepicker -->
 
     <!-- START NAV -->
     <nav class="nav">
       <a class="nav-item" id="logo">Grillber</a>
-      <a class="nav-item is-hidden-touch">About</a>
-      <a class="nav-item is-hidden-touch">How it works</a>
-      <a class="nav-item is-hidden-touch">Grills</a>
-      <a class="nav-item is-hidden-touch">Book</a>
+      <a class="nav-item is-hidden-touch" href='#aboutUs'>About</a>
+      <a class="nav-item is-hidden-touch" href='#howItWorks'>How it works</a>
+      <a class="nav-item is-hidden-touch" href='#grills'>Grills</a>
+      <a class="nav-item is-hidden-touch" href='#bookerLink'>Book</a>
       <a class="nav-item is-hidden-mobile" id='joinLink'>Join Grillber</a>
       <span class="nav-toggle">
         <span></span>
@@ -56,7 +55,7 @@
     <!-- END BANNER -->
 
     <!-- START ABOUT -->
-    <section class="hero aboutUs">
+    <section class="hero aboutUs" id='aboutUs'>
       <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class="title">
@@ -73,15 +72,15 @@
             </div>
             <div class='column is-7 has-text-left'>
               <ul class='listItems'>
-                <li class='listItems'><i class="fa fa-check" aria-hidden="true"></i>
+                <li><i class="fa fa-check" aria-hidden="true"></i>
                   Reserve a grill for your next cookout right here.</li>
-                <li class='listItems'><i class="fa fa-check" aria-hidden="true"></i>
+                <li><i class="fa fa-check" aria-hidden="true"></i>
                   Quick delivery. We'll get you your cooking gear within 30 minutes.</li>
-                <li class='listItems'><i class="fa fa-check" aria-hidden="true"></i>
+                <li><i class="fa fa-check" aria-hidden="true"></i>
                   No park? No problem! We've got rolls of sod as well!</li>
-                <li class='listItems'><i class="fa fa-check" aria-hidden="true"></i>
+                <li><i class="fa fa-check" aria-hidden="true"></i>
                   Throw in some lawn chairs!</li>
-                <li class='listItems'><i class="fa fa-check" aria-hidden="true"></i>
+                <li><i class="fa fa-check" aria-hidden="true"></i>
                   A wide range of grill options lets you plan a BBQ of any size.</li>
               </ul>
             </div>
@@ -92,7 +91,7 @@
     <!-- END ABOUT -->
 
     <!-- START HOW IT WORKS SECTION -->
-    <section class="hero howItWorks">
+    <section class="hero howItWorks" id='howItWorks'>
       <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class='howTitle'>
@@ -141,7 +140,7 @@
     <!-- END HOW IT WORKS SECTION -->
 
     <!-- START GRILL SECTION -->
-    <section class='hero grillList'>
+    <section class='hero grillList' id='grills'>
       <div class='hero-body'>
         <div class='container'>
           <div class='columns'>
@@ -156,9 +155,18 @@
                   </figure>
                 </div>
                 <div class='column is-6 has-text-left descColumn'>
+                  <h3 class='has-text-centered'>Small</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Small enough to take with you, pretty much anywhere, with the ability to grill up just about anything. Good times and food await you in this small package. Serves 6.
                   </p>
+                  <ul>
+                    <li><i class="fa fa-check" aria-hidden="true"></i>
+                      Diameter: 14 sq. inches</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i>
+                      Fuel Type: Charcoal</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i>
+                      Plated steel cooking grate</li>
+                  </ul>
                 </div>
               </div>
               <div class='columns'>
@@ -168,9 +176,18 @@
                   </figure>
                 </div>
                 <div class='column is-6 has-text-left descColumn'>
+                  <h3 class='has-text-centered'>Medium</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Ignite the coals and grill for the entire family on this classic charcoal grill. Plenty of space for grilling up a bunch of steaks or a burger for anyone who stops by. Serves 5-7.
                   </p>
+                  <ul>
+                    <li><i class="fa fa-check" aria-hidden="true"></i>
+                      Diameter: 26 sq. inches</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i>
+                      Fuel Type: Charcoal</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i>
+                      Wheels and tool hooks</li>
+                  </ul>
                 </div>
               </div>
               <div class='columns'>
@@ -180,8 +197,44 @@
                   </figure>
                 </div>
                 <div class='column is-6 has-text-left descColumn'>
+                  <h3 class='has-text-centered'>The Beast</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    The extra large grilling area, six burners, abundance of features, and optimal storage space leave you questioning a need for an "indoor kitchen" one dinner at a time. Prep, grill, and serve outside where the party is at. Serves 8+.
+                  </p>
+                  <ul>
+                    <li><i class="fa fa-check" aria-hidden="true"></i>
+                      Diameter: 624 sq. inches</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i>
+                      Fuel Type: Gas</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i>
+                      Shelves, cabinet, stainless steel everything</li>
+                  </ul>
+                </div>
+              </div>
+              <h1 class='grillTitle'>
+                Extras
+              </h1>
+              <div class='columns'>
+                <div class='column is-3 sod'>
+                  <h3 class='has-text-centered'>Sod</h3>
+                  <p class='has-text-right'>
+                    Add some sod for a park feel in the middle of the city!
+                  </p>
+                </div>
+                <div class='column is-3 sod'>
+                  <figure class='image level'>
+                    <img class='is-square' src="http://i.imgur.com/DU6WrpD.png" alt="">
+                  </figure>
+                </div>
+                <div class='column is-3 chair'>
+                  <figure class='image'>
+                    <img class='is-square' src="http://i.imgur.com/6wkcQoh.png" alt="">
+                  </figure>
+                </div>
+                <div class='column is-3 chair'>
+                  <h3 class='has-text-centered'>Lawnchairs</h3>
+                  <p class='has-text-left'>
+                    We've got lightweight, durable lawn chairs too!
                   </p>
                 </div>
               </div>
@@ -193,10 +246,11 @@
     <!-- END GRILL SECTION -->
 
     <!-- START AVAILABILITY SECTION -->
-    <section class='hero'>
+    <section class='hero bookerBody' id='bookerLink'>
       <div class='hero-body'>
         <div class='container'>
           <div class='columns'>
+            <div class='column is-2' id='shifter'></div>
             <div class='column is-4 is-offset-2'>
               <div id='booker'>
                 <p>
@@ -209,6 +263,10 @@
                 Details!
               </p>
               <div id='selector'>
+                <div class='field'>
+                  <label class='label'>What time?</label>
+                  <input id='timepicker'/>
+                </div>
                 <div class='field'>
                   <label class='label'>Which grill would you like?</label>
                   <p class='control'>
@@ -273,8 +331,9 @@
                     <span class="icon is-small is-left">
                       <i class="fa fa-dollar"></i>
                     </span>
-                    <input class="input" type="text" placeholder="Total" id='finalTotal'>
+                    <input class="input" type="text" placeholder="10" id='finalTotal'>
                   </p>
+                  <!-- Strip test payment drop in -->
                   <form action="/charge" method="POST" id='bookingButton'>
                     <script
                       src="https://checkout.stripe.com/checkout.js"
@@ -292,6 +351,24 @@
       </div>
     </section>
     <!-- END AVAILABILITY SECTION -->
+
+    <!-- START SOCIAL MEDIA SECTION -->
+    <section class="hero social">
+      <div class="hero-body">
+        <div class="container">
+          <h3 class="has-text-centered">
+            Check out some of the great times had with Grillber!
+          </h3>
+          <p class='has-text-centered'>
+            <a href='https://www.tumblr.com/search/grilling' target='_blank'><i class="fa fa-2x fa-tumblr" aria-hidden="true"></i></a>
+            <a href='https://www.instagram.com/explore/tags/grilling/' target='_blank'><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a>
+            <a href='https://de.pinterest.com/search/pins/?q=grilling' target='_blank'><i class="fa fa-2x fa-pinterest" aria-hidden="true"></i></a>
+            <a href='https://www.reddit.com/r/grilling/' target='_blank'><i class="fa fa-2x fa-reddit" aria-hidden="true"></i></a>            
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- END SOCIAL MEDIA SECTION -->
 
     <!-- START FOOTER -->
     <footer class="footer">
@@ -322,6 +399,7 @@
     </script>
     <script src="https://use.fontawesome.com/80d4978ea7.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
   </body>
 </html>

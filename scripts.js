@@ -1,26 +1,62 @@
+//Timepicker
+$(document).ready(function(){
+  $('#timepicker').timepicker({
+  timeFormat: 'h:mm p',
+  interval: 30,
+  minTime: '8:00',
+  maxTime: '23:00',
+  defaultTime: '11',
+  startTime: '08:00',
+  dynamic: false,
+  dropdown: true,
+  scrollbar: true
+  });
+});
+//
+
+//Datepicker
 $(function() {
     $("#booker").datepicker();
   });
 
 $('#booker').datepicker({
   onSelect: function() {
-    $('.selectorp').show('fade');
-    $('#selector').show('fade');
+    $('#shifter').hide(300, function() {
+      $('.selectorp').show('fade');
+      $('#selector').show('fade');
+    });
   }
 });
+//
 
+//Add chair dropdown
 $('#chairs').click(function() {
     $(".chairCount").toggle(this.checked);
 });
+//
 
+//Scroll reveal
 window.sr = ScrollReveal();
-sr.reveal('.landing', {duration: 1200});
-sr.reveal('.burger', {origin: 'left', distance: '1000px', viewFactor: 1, duration: 1000});
-sr.reveal('.listItems', {origin: 'right', distance: '1000px', viewFactor: 1, duration: 2000 }, 200);
+sr.reveal('.landing', {duration: 1200, origin: 'right'});
+sr.reveal('.burger', {origin: 'left', distance: '100px', viewFactor: 1, duration: 1000});
+sr.reveal('.listItems', {origin: 'right', distance: '100px', viewFactor: 1, duration: 1000 });
 sr.reveal('.picColumn', {origin: 'left', distance: '100px', duration: 1000});
-sr.reveal('#booker', {duration: 500}, 50);
+sr.reveal('.descColumn', {origin: 'right', distance: '100px', duration: 1000});
+sr.reveal('#booker', {duration: 500, viewFactor: 0.5});
+sr.reveal('.sod', {origin: 'left', distance: '300px', duration: 1000});
+sr.reveal('.chair', {origin: 'right', distance: '300px', duration: 1000});
+//
 
+//Link scroll on click
+$("a[href^='#']").on("click", function(event){
+  event.preventDefault();
+  $("html, body").animate({
+      scrollTop: $( $.attr(this, "href") ).offset().top
+  }, 500);
+});
+//
 
+//Price logic
 var grillCost = function() {
   var grillExp, hourCount, grillBase;
   if(document.querySelector('.grillType').value === 'small') {
@@ -60,3 +96,4 @@ $('#selector').change(function() {
   displayPrice = calculatorFunc(grillCost(), extrasCost());
   document.getElementById('finalTotal').value = displayPrice;
 });
+//

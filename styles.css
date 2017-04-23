@@ -1,7 +1,7 @@
 html, body{
   background-color: #c43e00;
 }
-.hero-body.landing{
+.landing{
   background-image: url('http://i.imgur.com/jMxejb0.jpg');
   background-position: right;
   background-size: contain;
@@ -36,7 +36,7 @@ html, body{
 .nav a:hover {
   color: white;
 }
-.hero.aboutUs {
+.aboutUs {
   margin-top: 20px;
   background-color: #ff6f00;
   background-image: url('http://i.imgur.com/fRP0RNp.jpg');
@@ -44,26 +44,26 @@ html, body{
   background-size: cover;
   background-position: top;
 }
-.hero.aboutUs .container h1 {
+.aboutUs .container h1 {
   font-family: 'Acme', sans-serif;
   color: black;
   text-shadow: -1px 0 #c43e00, 0 1px #c43e00, 1px 0 #c43e00, 0 -1px #c43e00;
   font-size: 5vh;
   font-weight: bold;
 }
-.hero.aboutUs .container h2 {
+.aboutUs .container h2 {
   font-family: 'Acme', sans-serif;
   color: black;
   text-shadow: -1px 0 #c43e00, 0 1px #c43e00, 1px 0 #c43e00, 0 -1px #c43e00;
 }
-.hero.aboutUs .container li {
+.aboutUs .container li {
   font-family: 'Acme', sans-serif;
   color: black;
   text-shadow: -1px 0 #c43e00, 0 1px #c43e00, 1px 0 #c43e00, 0 -1px #c43e00;
   font-size: 3vh;
   padding: 10px;
 }
-.howTitle, .grillTitle {
+.howTitle {
   font-family: 'Acme', sans-serif;
   color: black;
   text-shadow: -1px 0 #c43e00, 0 1px #c43e00, 1px 0 #c43e00, 0 -1px #c43e00;
@@ -79,14 +79,71 @@ html, body{
   text-shadow: -1px 0 #c43e00, 0 1px #c43e00, 1px 0 #c43e00, 0 -1px #c43e00;
   font-size: 4vh;
 }
+.grillTitle {
+  font-family: 'Acme', sans-serif;
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  font-size: 7vh;
+}
 .grillList {
   margin-top: 20px;
   background-color: #ff6f00;
 }
-.grillList .descColumn {
+.grillList .descColumn p {
+  font-family: 'Acme', sans-serif;
+  color: black;
+  text-shadow: -1px 0 #c43e00, 0 1px #c43e00, 1px 0 #c43e00, 0 -1px #c43e00;
+  font-size: 3.0vh;
+  padding: 10px;
+}
+.descColumn h3 {
+  font-family: 'Acme', sans-serif;
+  color: black;
+  text-shadow: -1px 0 #c43e00, 0 1px #c43e00, 1px 0 #c43e00, 0 -1px #c43e00;
+  font-size: 3.5vh;
+  text-decoration: underline;
+}
+.descColumn li {
+  font-family: 'Acme', sans-serif;
+  color: black;
+  text-shadow: -1px 0 #c43e00, 0 1px #c43e00, 1px 0 #c43e00, 0 -1px #c43e00;
+  font-size: 2.5vh;
+  padding: 10px;
 }
 .grillList img {
   border: black 1px solid;
+}
+.sod h3 {
+  font-family: 'Acme', sans-serif;
+  color: black;
+  text-shadow: -1px 0 #c43e00, 0 1px #c43e00, 1px 0 #c43e00, 0 -1px #c43e00;
+  font-size: 3.5vh;
+  text-decoration: underline;
+}
+.sod p {
+  font-family: 'Acme', sans-serif;
+  color: black;
+  text-shadow: -1px 0 #c43e00, 0 1px #c43e00, 1px 0 #c43e00, 0 -1px #c43e00;
+  font-size: 3.0vh;
+  padding: 10px;
+}
+.chair h3 {
+  font-family: 'Acme', sans-serif;
+  color: black;
+  text-shadow: -1px 0 #c43e00, 0 1px #c43e00, 1px 0 #c43e00, 0 -1px #c43e00;
+  font-size: 3.5vh;
+  text-decoration: underline;
+}
+.chair p {
+  font-family: 'Acme', sans-serif;
+  color: black;
+  text-shadow: -1px 0 #c43e00, 0 1px #c43e00, 1px 0 #c43e00, 0 -1px #c43e00;
+  font-size: 3.0vh;
+  padding: 10px;
+}
+.bookerBody {
+  min-height: 600px;
+  margin-top: 20px;
 }
 #booker p {
   font-family: 'Acme', sans-serif;
@@ -160,6 +217,26 @@ html, body{
 }
 #bookingButton {
   margin-left: 10px;
+}
+.social {
+  margin-top: 20px;
+  background: #f1f1f1;
+  font-family: 'Acme', sans-serif;
+  color: black;
+  text-shadow: -1px 0 #c43e00, 0 1px #c43e00, 1px 0 #c43e00, 0 -1px #c43e00;
+  font-size: 5vh;
+  font-weight: bold;
+}
+.social a {
+  color: black;
+  text-shadow: -1px 0 #c43e00, 0 1px #c43e00, 1px 0 #c43e00, 0 -1px #c43e00;
+}
+.social a:hover {
+  color: #c43e00;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.footer {
+  margin-top: 20px;
 }
 .footer a {
   color: #ff6f00;
