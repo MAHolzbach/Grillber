@@ -56,6 +56,16 @@ $("a[href^='#']").on("click", function(event){
 });
 //
 
+//Launch/close sign up modal
+$('.joinLink').on('click', function() {
+  $('#signUpForm').addClass('is-active');
+});
+
+$('.modal-background, .modal-close, button').on('click', function() {
+  $('#signUpForm').removeClass('is-active');
+});
+//
+
 //Price logic
 var grillCost = function() {
   var grillExp, hourCount, grillBase;
