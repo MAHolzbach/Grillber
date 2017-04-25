@@ -56,6 +56,18 @@ $("a[href^='#']").on("click", function(event){
 });
 //
 
+//Mobile nav menu
+$(".nav-toggle").click(function(){
+  $(this).toggleClass("is-active");
+  $(".nav-menu").toggleClass("is-active");
+});
+
+$("a").click(function(){
+  $(".nav-toggle").removeClass("is-active");
+  $(".nav-menu").removeClass("is-active");
+});
+//
+
 //Launch/close sign up modal
 $('.joinLink').on('click', function() {
   $('#signUpForm').addClass('is-active');
