@@ -35,6 +35,8 @@ html, body{
 }
 .nav a:hover {
   color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border: white;
 }
 .nav .nav-toggle span {
   box-shadow: -1px 0 #c43e00, 0 1px #c43e00, 1px 0 #c43e00, 0 -1px #c43e00;
@@ -47,10 +49,10 @@ html, body{
   background-color: white;
   box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-a.nav-item:hover {
+/*a.nav-item:hover {
   color: #ff6f00;
   border: white;
-}
+}*/
 .aboutUs {
   margin-top: 20px;
   background-color: #ff6f00;
