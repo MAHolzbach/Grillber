@@ -68,13 +68,18 @@ $("a").click(function(){
 });
 //
 
-//Launch/close sign up modal
+//Launch/close sign up modals
 $('.joinLink').on('click', function() {
   $('#signUpForm').addClass('is-active');
 });
 
-$('.modal-background, .modal-close, button').on('click', function() {
+$('.modal-background, .modal-close, .cancel').on('click', function() {
+  $('#signUpForm, #success').removeClass('is-active');
+});
+
+$('.submission').on('click', function() {
   $('#signUpForm').removeClass('is-active');
+  $('#success').addClass('is-active');
 });
 //
 
